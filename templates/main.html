@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Juste Prix</title>
+</head>
+<body>
+    <h1>Bienvenu au jeu du Juste Prix</h1>
+    <div id="product">
+        <img src="{{product.MainImageUrl}}" alt="{{product.Name}}">
+        <p>{{product.Name}}</p>
+    </div>
+    <h3>guess a price</h3>
+    <p> Essayez de deviner le prix de l'objet ci-contre !</p>
+    <p>{{ lastguess }}{{ resultat }}</p>
+    <form action="/" method="post">
+        <label for="Prix">Prix</label>
+        <br><input type="text" name="price" id="idprice" placeholder="Guess a price">
+        <input type="submit" value="guess">
+    </form>
+</body>
+</html>
